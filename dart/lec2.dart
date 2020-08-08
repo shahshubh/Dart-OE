@@ -29,6 +29,8 @@ void main() {
   hm.putIfAbsent(2, () => 'H');
   hm.putIfAbsent(1, () => 'X');
   hm.update(1, (value) => 'S');
+  hm.update(1, (value) => '${value}S');
+  hm.update(1, (value) => '${value}S');
 
   print(hm);
   print(hm.containsKey(1));
